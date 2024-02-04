@@ -1,0 +1,45 @@
+Collection Framework:
+C# collections are made to more effectively organize, store, and modify comparable data. Adding, deleting, discovering, and inserting data into the collection are all examples of data manipulation. These classes support stacks, queues, lists, and hash tables. Most collection classes implement the same interfaces.
+
+Data Structures
+- Linear
+- Non Linear
+
+Time Complexity
+-Assymptotic Notations
+ -Big O(worst case)
+ -Thetta (specific)
+ -Omega (least cae)
+
+Algorithms -brute force
+           -sorting
+           -searching
+           -divide and conquer 
+           -greedy
+           -recursion
+           -hashing
+           -randomized
+           -backtracking
+           -dynamic programming
+in for loops if more than 1 loops are present then loop with maximum iteration will be the time complexity of the program
+it should be considered as the worst case complexity 
+-------------------------------------------------------------
+
+linear data structure:
+elements will stored in a linear manner with squential memory allocation
+-array
+-linked list
+-stack
+-queue
+
+non linear data structure:
+-graph
+-tree
+ brute force complexity we not need to require time complexity 
+
+divide and conquer
+-merge sort
+-binary sort
+
+generic and non generic
+.net-1.0
