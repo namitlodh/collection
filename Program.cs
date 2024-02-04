@@ -6,34 +6,34 @@ class Program
 {
     static void Main()
     {
-        // Creating a Stack
-        Stack myStack = new Stack();
+        // Creating a Queue
+        Queue myQueue = new Queue();
 
-        // Push elements onto the Stack
-        myStack.Push("Element 1");
-        myStack.Push("Element 2");
-        myStack.Push("Element 3");
+        // Enqueue elements
+        myQueue.Enqueue("Element 1");
+        myQueue.Enqueue("Element 2");
+        myQueue.Enqueue("Element 3");
 
-        // Displaying the elements in the Stack
-        DisplayStack(myStack);
+        // Displaying the elements in the Queue
+        DisplayQueue(myQueue);
 
-        // Peek at the top element
-        Console.WriteLine("Top element: " + myStack.Peek());
+        // Peek at the front element
+        Console.WriteLine("Front element: " + myQueue.Peek());
 
-        // Pop elements
-        while (myStack.Count > 0)
+        // Dequeue elements
+        while (myQueue.Count > 0)
         {
-            Console.WriteLine("Pop: " + myStack.Pop());
+            Console.WriteLine("Dequeue: " + myQueue.Dequeue());
         }
 
-        // Check if the Stack is empty
-        Console.WriteLine("Is the Stack empty? " + (myStack.Count == 0));
+        // Check if the Queue is empty
+        Console.WriteLine("Is the Queue empty? " + (myQueue.Count == 0));
     }
 
-    static void DisplayStack(Stack stack)
+    static void DisplayQueue(Queue queue)
     {
-        Console.WriteLine("Elements in the Stack:");
-        foreach (var item in stack)
+        Console.WriteLine("Elements in the Queue:");
+        foreach (var item in queue)
         {
             Console.WriteLine(item);
         }
