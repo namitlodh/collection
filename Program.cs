@@ -6,36 +6,41 @@ class Program
 {
     static void Main()
     {
-        // Creating a Queue
-        Queue myQueue = new Queue();
+        // Creating a HashSet
+        HashSet<int> myHashSet = new HashSet<int>();
 
-        // Enqueue elements
-        myQueue.Enqueue("Element 1");
-        myQueue.Enqueue("Element 2");
-        myQueue.Enqueue("Element 3");
+        // Adding elements to the HashSet
+        myHashSet.Add(1);
+        myHashSet.Add(2);
+        myHashSet.Add(3);
 
-        // Displaying the elements in the Queue
-        DisplayQueue(myQueue);
+        // Displaying the elements in the HashSet
+        DisplayHashSet(myHashSet);
 
-        // Peek at the front element
-        Console.WriteLine("Front element: " + myQueue.Peek());
+        // Checking if an element is present
+        int searchElement = 2;
+        Console.WriteLine($"Is {searchElement} present in the HashSet? {myHashSet.Contains(searchElement)}");
 
-        // Dequeue elements
-        while (myQueue.Count > 0)
-        {
-            Console.WriteLine("Dequeue: " + myQueue.Dequeue());
-        }
+        // Removing an element
+        myHashSet.Remove(2);
 
-        // Check if the Queue is empty
-        Console.WriteLine("Is the Queue empty? " + (myQueue.Count == 0));
+        // Displaying the updated HashSet
+        Console.WriteLine("\nHashSet after removing element 2:");
+        DisplayHashSet(myHashSet);
+
+        // Clearing the HashSet
+        myHashSet.Clear();
+
+        // Checking if the HashSet is empty
+        Console.WriteLine("\nIs the HashSet empty? " + (myHashSet.Count == 0));
     }
 
-    static void DisplayQueue(Queue queue)
+    static void DisplayHashSet(HashSet<int> hashSet)
     {
-        Console.WriteLine("Elements in the Queue:");
-        foreach (var item in queue)
+        Console.WriteLine("Elements in the HashSet:");
+        foreach (var item in hashSet)
         {
-            Console.WriteLine(item);
+            Console.Write(item + " ");
         }
         Console.WriteLine();
         Console.ReadLine();
